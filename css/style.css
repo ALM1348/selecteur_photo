@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+
+#photo-list:hover {
+    background-color: silver;
+
+}
+
+.selected {
+    background-color: forestgreen;
+}
