@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sélecteur Photo</title>
-    <link href="style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,7 +12,10 @@
     </header>
 
 <main>
-    <ul id="photos-list"></ul>
+    <div>
+
+    
+    <ul id="photos-list">
         <li><img src="images/1.jpg" alt="Photo 1"></li>
         <li><img src="images/2.jpg" alt="Photo 2"></li>
         <li><img src="images/3.jpg" alt="Photo 3"></li>
@@ -24,8 +27,9 @@
         <li><img src="images/9.jpg" alt="Photo 9"></li>
         <li><img src="images/10.jpg" alt="Photo 10"></li>
     </ul>
- <p id="total">Vous avez sélectionné <em>0</em> photo(s)</p>
+    </div>
+ <p id="total">Vous avez sélectionné <span>0</span> photo(s)</p>
     </main>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

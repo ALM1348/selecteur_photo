@@ -1,8 +1,28 @@
-*{
+/**{
     box-sizing: border-box;
+}*/
+
+div{
+    list-style: none;
+    max-width: 900px;
+    
 }
 
-#photo-list:hover {
+li {
+    display: inline-block;
+    margin: 1em;
+    padding: 0.5em;
+    transition: background-color 2s;
+    cursor: pointer;
+    
+    
+}
+
+img {
+    padding: 3px;
+}
+
+#photos-list img:hover {
     background-color: silver;
 
 }
@@ -10,3 +30,9 @@
 .selected {
     background-color: forestgreen;
 }
+
+#total span {
+    color: red;
+    font-weight: bold;
+}
+
