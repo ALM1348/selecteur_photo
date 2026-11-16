@@ -15,7 +15,7 @@ console.log(photoList)
 /* ***************************************** FONCTIONS ***************************************** */
 /*************************************************************************************************/
 function ClickPhoto() {
-    //this.classList.toggle('selected');
+    this.classList.toggle('selected');
 
     const photosSelect = document.querySelectorAll ('#photos-list li.selected');
 
@@ -26,9 +26,13 @@ function ClickPhoto() {
 /* ************************************** CODE PRINCIPAL *************************************** */
 /*************************************************************************************************/
 
-photoList.forEach(function(li) {
+photoList.forEach(li => {
+    li.addEventListener("click", ClickPhoto)})
+
+/** Autre version plus longue
+ * photoList.forEach(function(li) {
     li.addEventListener("click", function() {
   li.classList.toggle("selected");
   ClickPhoto()
 });
-})
+}) */
